@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
         <RootNamespace>ProductLibrary</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Dapper" Version="1.60.6" />
-        <PackageReference Include="MySql.Data" Version="8.0.16" />
+        <PackageReference Include="Dapper" Version="2.0.78" />
+        <PackageReference Include="MySql.Data" Version="8.0.22" />
     </ItemGroup>
     
 </Project>
