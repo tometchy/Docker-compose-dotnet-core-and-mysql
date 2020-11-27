@@ -37,4 +37,4 @@ If you want to see if this example system works properly, just access in your br
 ]
 ```
 
-If you see empty result, wait a while and try again - maybe MyQSL database is not fully initialized yet.
+If you see empty result, wait a while and try again - maybe MySQL database is not fully initialized yet.

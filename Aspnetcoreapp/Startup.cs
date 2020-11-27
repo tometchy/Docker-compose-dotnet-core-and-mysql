@@ -14,15 +14,15 @@ namespace aspnetcoreapp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment()) 
+            if (env.EnvironmentName == "Development") 
                 app.UseDeveloperExceptionPage();
-
-            app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
